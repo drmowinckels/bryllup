@@ -1,0 +1,86 @@
+{{ define "main" }}
+{{ $page := . }}
+<main class="page-main pa4" role="main">
+  <section class="page-content mw9 center">
+    <div class="flex-l items-center" style="{{ if .Params.image_left }}flex-direction: row-reverse;{{ end }}">
+      <div class="mh4 w-50-l {{ if not .Params.text_align_left }}tr{{ end }}">
+        {{ with .Params.title }}<h1 class="f2 f1-m f-subheadline-l fw5-ns mv4 lh-solid">{{ . }}</h1>{{ end }}
+        {{ with .Params.subtitle }}<h2 class="f5 fw7 mt0 mb4 ttu tracked">{{ . }}</h2>{{ end }}
+        {{ if .Params.show_social_links }}{{ partial "shared/social-links.html" . }}{{ end }}
+        {{ with .Params.description }}<p class="f4 mt4 lh-copy">{{ . | markdownify }}</p>{{ end }}
+        {{ if .Params.show_action_link }}<a class="mt4 action {{ .Params.action_type }}" href="{{ .Params.action_link | relURL }}">{{ .Params.action_label | safeHTML }}</a>{{ end }}
+        <div id="clockdiv" class = "flex items-center flex-wrap pa2 tc w-100 {{ if not .Params.text_align_left }}justify-end{{ end }}">
+      <div class="b--solid bw1 pa3 ma2" style="width: 100px">
+        <h2 class="days"></h2>
+        <p class="f4 mt4 lh-copy">Days</p>
+      </div>
+      <div class="b--solid bw1 pa3 ma2" style="width: 100px">
+        <h2 class="hours"></h2>
+        <p class="f4 mt4 lh-copy">Hours</p>
+      </div>
+      <div class="b--solid bw1 pa3 ma2" style="width: 100px">
+        <h2 class="minutes"></h2>
+        <p class="f4 mt4 lh-copy">Minutes</p>
+      </div>
+      <div class="b--solid bw1 pa3 ma2" style="width: 100px">
+        <h2 class="seconds"></h2>
+        <p class="f4 mt4 lh-copy">Seconds</p>
+      </div>
+    </div>
+      </div>
+      <div class="tr w-50-l {{ if .Params.image_left }}ml4{{ else }}mr4{{ end }}">
+      {{ with .Params.images }}
+        {{ range first 1 . }}<img class="mv0 w-100-m" src="{{ . }}"/>{{ end }}
+      {{ end }}
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  function getTimeRemaining(endtime) {
+    const total = Date.parse(endtime) - Date.parse(new Date());
+    const seconds = Math.floor((total / 1000) % 60);
+    const minutes = Math.floor((total / 1000 / 60) % 60);
+    const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+    const days = Math.floor(total / (1000 * 60 * 60 * 24));
+    
+    return {
+      total,
+      days,
+      hours,
+      minutes,
+      seconds
+    };
+  }
+  
+  function initializeClock(id, endtime) {
+    const clock = document.getElementById(id);
+    const daysSpan = clock.querySelector('.days');
+    const hoursSpan = clock.querySelector('.hours');
+    const minutesSpan = clock.querySelector('.minutes');
+    const secondsSpan = clock.querySelector('.seconds');
+  
+    function updateClock() {
+      const t = getTimeRemaining(endtime);
+  
+      daysSpan.innerHTML = t.days;
+      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+  
+      if (t.total <= 0) {
+        clearInterval(timeinterval);
+      }
+    }
+  
+    updateClock();
+    const timeinterval = setInterval(updateClock, 1000);
+  }
+  
+  const deadline = "2022-08-13T12:00:00"
+  initializeClock('clockdiv', deadline);
+</script>
+{{ end }}
+
+
