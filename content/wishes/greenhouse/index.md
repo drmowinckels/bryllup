@@ -1,28 +1,19 @@
 ---
-author: Alison Hill
-categories:
-- greenhouse
-date: "2021-01-12"
-date_end: "2021-01-13"
+author: Inger & Mo
+date: "2020-01-13T14:15:59-06:00"
+date_end: "2020-01-15T14:45:59-06:00"
 draft: false
-excerpt: Our garden is slowly shaping up, but we cannot truly unlock our growing potential without a proper greenhouse!
-featured: true
+excerpt: 3m x 4m (12kvm), 10mm polykarbonatplater, 20 337,- 
+  Prisen er inkludert frakt og med en spesialbestilt høy dør pga. mursteinbasen  
 layout: single
+location: Online
+subtitle: 3m x 4m (12kvm) 
+title: Drivhus i tre  
 links:
 - icon: door-open
   icon_pack: fas
-  name: website
-  url: https://bakeoff.netlify.com/
-- icon: github
-  icon_pack: fab
-  name: code
-  url: https://github.com/apreshill/bakeoff
-location: Norway
-show_post_time: false
-subtitle: Help us unlock growing potential!
-title: A greenhouse
+  name: Nettside
+  url: https://norhage.no/produkt/drivhus/alle-drivhus/drivhus-tre-300/
 ---
 
-We love our garden, and we love growing our own food. 
-But living in one of the most northern countries in the world, our growing season is short. 
-In order to get the most out of the season, getting a nice greenhouse would enable us to grow even longer!
+Drivhuset vi har valgt oss ut er solid og skal tåle mye vind, noe som er en forutsetning her vi bor. Det har et skjelett av tre, med polykarbonatplater over. 
