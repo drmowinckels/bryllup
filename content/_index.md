@@ -6,6 +6,7 @@ description: We are finally getting married, after 3 years of having to postpone
 image_left: true
 images:
 - img/ingerogmo_ed.png
+- img/ring.png
 show_action_link: false
 show_social_links: false
 subtitle: Inger & Mo

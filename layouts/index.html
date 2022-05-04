@@ -1,5 +1,29 @@
 {{ define "main" }}
 {{ $page := . }}
+<style>
+* {box-sizing: border-box;}
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+</style>
 <main class="page-main pa4" role="main">
   <section class="page-content mw9 center">
     <div class="flex-l items-center" style="{{ if .Params.image_left }}flex-direction: row-reverse;{{ end }}">
@@ -28,9 +52,13 @@
       </div>
     </div>
       </div>
-      <div class="tr w-50-l {{ if .Params.image_left }}ml4{{ else }}mr4{{ end }}">
+      <div class="slideshow-container tr w-50-l {{ if .Params.image_left }}ml4{{ else }}mr4{{ end }}">
       {{ with .Params.images }}
-        {{ range first 1 . }}<img class="mv0 w-100-m" src="{{ . }}"/>{{ end }}
+        {{ range . }}
+          <div class="slides fade">
+            <img class="mv0 w-100-m" src="{{ . }}"/>
+          </div>
+        {{ end }}
       {{ end }}
       </div>
     </div>
@@ -80,6 +108,21 @@
   
   const deadline = "2022-08-13T12:00:00"
   initializeClock('clockdiv', deadline);
+</script>
+<script>
+  let slideIndex = 0;
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 10000); // Change image every 2 seconds
+  }
+  showSlides();
 </script>
 {{ end }}
 
