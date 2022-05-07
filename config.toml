@@ -1,4 +1,4 @@
-baseURL = "ingerogmo.info"
+baseURL = "https://ingerogmo.netlify.app"
 theme = "hugo-apero"
 languageCode = "en"
 title = "We are getting married!"
