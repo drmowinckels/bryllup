@@ -1,9 +1,6 @@
 ---
 author: Inger & Mo
-categories:
-- meetup
-date: "2021-01-01T14:15:59-06:00"
-date_end: "2021-01-01T14:45:59-06:00"
+weight: 4
 draft: false
 excerpt: Ca. 10.000,- 
 layout: single

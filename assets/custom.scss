@@ -1,0 +1,41 @@
+// Override this file to add your own SCSS styling.
+* {box-sizing: border-box;}
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .btn-links{
+    border: 0;
+    margin: 2px;
+    text-decoration: none;
+  }
+  
+  .icon { 
+    fill: white;
+    stroke: $headlineColorCustom;
+    width: 50px !important; 
+    height: 50px !important;
+    margin: .5em !important;
+  }
+  
+  .icon:hover { 
+    fill: lighten($headlineColorCustom, 50%);
+  }

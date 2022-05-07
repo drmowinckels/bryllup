@@ -1,17 +1,11 @@
 ---
-author: Alison Hill
-categories:
-- meetup
-date: "2021-01-01T14:15:59-06:00"
-date_end: "2021-01-01T14:45:59-06:00"
+author: Inger & Mo
+weight: 8 
 draft: false
-excerpt: |
-  Dette punktet er for dem som kunne tenke seg å hjelpe oss å fylle litt av den store haugen med murstein som vi trenger for å bygge støttemuren. 
 layout: single
 location: Online
 links:
-- icon: door-open
-  icon_pack: fas
+- icon: bunny_1
   name: Mer info
   url: https://www.qvesarum.no/inspiration/murvegg-for-drivhus-dette-bor-du-tenke-pa/?goal=0_87b1917599-3b37cd5c16-477406371&mc_cid=3b37cd5c16&mc_eid=fe9b1863d7 
 title: Rød teglstein 

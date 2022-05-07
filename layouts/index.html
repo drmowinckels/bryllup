@@ -1,29 +1,8 @@
 {{ define "main" }}
 {{ $page := . }}
-<style>
-* {box-sizing: border-box;}
 
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  
-  .slide {
-    display: none;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-</style>
+{{ partial "shared/bunnies.html" . }}
+
 <main class="page-main pa4" role="main">
   <section class="page-content mw9 center">
     <div class="flex-l items-center" style="{{ if .Params.image_left }}flex-direction: row-reverse;{{ end }}">
@@ -34,33 +13,78 @@
         {{ with .Params.description }}<p class="f4 mt4 lh-copy">{{ . | markdownify }}</p>{{ end }}
         {{ if .Params.show_action_link }}<a class="mt4 action {{ .Params.action_type }}" href="{{ .Params.action_link | relURL }}">{{ .Params.action_label | safeHTML }}</a>{{ end }}
         <div id="clockdiv" class = "flex items-center flex-wrap pa2 tc w-100 {{ if not .Params.text_align_left }}justify-end{{ end }}">
-      <div class="b--solid bw1 pa3 ma2" style="width: 100px">
+      <div class="b--solid bw1 pa3 ma2 br3" style="width: 100px">
         <h2 class="days"></h2>
         <p class="f4 mt4 lh-copy">Days</p>
       </div>
-      <div class="b--solid bw1 pa3 ma2" style="width: 100px">
+      <div class="b--solid bw1 pa3 ma2 br3" style="width: 100px">
         <h2 class="hours"></h2>
         <p class="f4 mt4 lh-copy">Hours</p>
       </div>
-      <div class="b--solid bw1 pa3 ma2" style="width: 100px">
+      <div class="b--solid bw1 pa3 ma2 br3" style="width: 100px">
         <h2 class="minutes"></h2>
         <p class="f4 mt4 lh-copy">Minutes</p>
       </div>
-      <div class="b--solid bw1 pa3 ma2" style="width: 100px">
-        <h2 class="seconds"></h2>
-        <p class="f4 mt4 lh-copy">Seconds</p>
+      <div class="b--solid bw1 pa3 ma2 br3" style="width: 100px">
+        <h2 class="seconds center"></h2>
+        <p class="f4 mt4 lh-copy center">Seconds</p>
       </div>
     </div>
       </div>
       <div class="slideshow-container tr w-50-l {{ if .Params.image_left }}ml4{{ else }}mr4{{ end }}">
       {{ with .Params.images }}
         {{ range . }}
+          {{ $image := resources.Get . }}
           <div class="slides fade">
-            <img class="mv0 w-100-m" src="{{ . }}"/>
+            <img class="mv0 w-100-m" src="{{ $image }}"/>
           </div>
         {{ end }}
       {{ end }}
       </div>
+    </div>
+    
+    
+    <div class="center mw7">
+      {{ $sec := (site.GetPage "wishes") }}
+      <h1 class="f2 f1-m f-subheadline-l fw5-ns mt4 mv4 lh-solid">
+        {{ $sec.Title | markdownify }}
+      </h1>
+      <p class="f4 mt4 lh-copy">
+        {{ $sec.Content | markdownify }}
+      </p>
+      {{ range sort (where .Site.RegularPages "Section" "wishes") .Params.weight "desc" }}
+      {{ $page := . }}  
+      <hr width="50%">
+      <div class="flex-l items-center">
+        <div class="w-50-l">
+          <h1 class="f3 fw7 mt4 mb2 ttu custom-body-link-color">{{ .Title | markdownify }}</h1> 
+        {{ with .Params.subtitle }}
+          <h2 class="f4 mt2 gray">{{ . | markdownify }}</h2>
+        {{ end }}
+          {{ with .Params.excerpt }}
+            <p class="mb2">
+              {{ . | markdownify }}
+            </p>
+          {{ end }}
+          <p class="mb2">
+            {{ .Content | markdownify }}
+          </p>
+          {{ if .Params.links }}
+            <div style="text-align: center;">
+              {{ partial "shared/btn-links.html" . }}
+            </div>
+          {{ end }}
+        </div>
+        {{ range first 1 (.Resources.ByType "image") }}
+        {{ $image := .Fit "200x200" }}
+          <div class="tr w-50-l">
+            <center>
+            <img class="mv0"  src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+            </center>
+          </div>
+        {{ end }}
+        </div>
+      {{ end }}
     </div>
   </section>
 </main>

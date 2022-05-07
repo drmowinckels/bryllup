@@ -1,22 +1,10 @@
 ---
 author: Inger & Mo
-categories:
-- greenhouse
-date: "2021-01-12"
-date_end: "2021-01-13"
+weight: 7 
 draft: false
 excerpt: Det er noe vakkert og symbolsk ved det å bygge et fundament med steiner fra folk vi er glade i, og vi håper dere vil være med på det. 
 featured: true
 layout: single
-links:
-- icon: door-open
-  icon_pack: fas
-  name: website
-  url: https://bakeoff.netlify.com/
-- icon: github
-  icon_pack: fab
-  name: code
-  url: https://github.com/apreshill/bakeoff
 location: Norway
 show_post_time: false
 subtitle: et vennskapssymbol
