@@ -33,11 +33,12 @@
       </div>
       <div class="slideshow-container tr w-50-l {{ if .Params.image_left }}ml4{{ else }}mr4{{ end }}">
       {{ with .Params.images }}
-        {{ range . }}
+        {{ range . }} 
           {{ $image := resources.Get . }}
-          <div class="slides fade">
-            <img class="mv0 w-100-m" src="{{ $image }}"/>
-          </div>
+          {{ $image := $image.Fill "600x400 Center" }}
+            <div class="slides fade">
+              <img class="mv0 w-100-m" src="{{ $image.RelPermalink }}"/>
+            </div>
         {{ end }}
       {{ end }}
       </div>
@@ -56,6 +57,14 @@
       {{ $page := . }}  
       <hr width="50%">
       <div class="flex-l items-center">
+         {{ range first 1 (.Resources.ByType "image") }}
+        {{ $image := .Fill "200x200 Center" }}
+          <div class="tr w-50-l">
+            <center>
+            <img class="mv0"  src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+            </center>
+          </div>
+        {{ end }}
         <div class="w-50-l">
           <h1 class="f3 fw7 mt4 mb2 ttu custom-body-link-color">{{ .Title | markdownify }}</h1> 
         {{ with .Params.subtitle }}
@@ -75,14 +84,7 @@
             </div>
           {{ end }}
         </div>
-        {{ range first 1 (.Resources.ByType "image") }}
-        {{ $image := .Fit "200x200" }}
-          <div class="tr w-50-l">
-            <center>
-            <img class="mv0"  src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
-            </center>
-          </div>
-        {{ end }}
+       
         </div>
       {{ end }}
     </div>
