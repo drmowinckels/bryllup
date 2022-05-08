@@ -5,8 +5,8 @@ draft: false
 excerpt: 369,-
 layout: single
 location: Online
-subtitle: av Maria Berg Hestad
-title: Boken Dyrk enkelt med drivhus
+subtitle: Bok av Maria Berg Hestad
+title: Dyrk enkelt med drivhus
 links:
 - icon: door-open
   icon_pack: fas

@@ -8,4 +8,4 @@ location: Online
 title: Gravearbeid og fundament  
 ---
 
-Drivhuset må fundamenteres godt, og da trenger vi å få gjort endel gravearbeid i forkant.
+Med all den vinden vi har her i Hærland, trenger vi et godt fundament. 
