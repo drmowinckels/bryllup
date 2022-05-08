@@ -12,9 +12,9 @@
     {{ else if in (slice "http" "https") $scheme }}
       {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
     {{ end }}  
-  <a class="btn-links mr2 ba dib" href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>
+  <a class="btn-links b--solid bw1" href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>
     {{ with .icon }}
-      <svg class="icon fa-lg fa-fw mr2">
+      <svg class="icon b--dashed bw1">
         <use xlink:href="#{{ . }}"></use>
       </svg>
     {{ end }}

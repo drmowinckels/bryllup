@@ -8,9 +8,8 @@ location: Online
 subtitle: Bok av Maria Berg Hestad
 title: Dyrk enkelt med drivhus
 links:
-- icon: door-open
-  icon_pack: fas
-  name: Kjøp her
+- icon: bunny_3
+  name: Mer om boken her
   url: https://mariaberghestad.no/nettbutikk 
 ---
 

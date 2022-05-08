@@ -79,9 +79,7 @@
             {{ .Content | markdownify }}
           </p>
           {{ if .Params.links }}
-            <div style="text-align: center;">
-              {{ partial "shared/btn-links.html" . }}
-            </div>
+            {{ partial "shared/btn-links.html" . }}
           {{ end }}
         </div>
        

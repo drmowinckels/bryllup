@@ -9,7 +9,7 @@ subtitle: Fra Ventomax
 title: Automatisk Vindusåpner 
 links:
 - icon: bunny_4
-  name: Kjøp her
+  name: Produktside
   url: https://norhage.no/produkt/drivhustilbehor/automatisk-vindusapner-ventomax/ 
 ---
 

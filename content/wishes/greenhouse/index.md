@@ -8,7 +8,7 @@ subtitle: 3m x 4m (12kvm)
 title: Drivhus i tre  
 links:
 - icon: bunny_2
-  name: Nettside
+  name: Produktside
   url: https://norhage.no/produkt/drivhus/alle-drivhus/drivhus-tre-300/
 ---
 

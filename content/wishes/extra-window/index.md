@@ -9,7 +9,7 @@ subtitle: for ekstra ventilasjon
 title: Sidevinduer til drivhuset 
 links:
 - icon: bunny_3
-  name: Kjøp her
+  name: Produktside
   url: https://norhage.no/produkt/tilbehor-til-drivhus-tre/sidevindu-til-drivhus-modellen-tre/ 
 ---
 
