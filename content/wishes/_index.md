@@ -28,7 +28,9 @@ Uansett vil et drivhus forlenge dyrkesesongen vår, og vi gleder oss masse til �
 Drivhuset vi har valgt oss ut er solid og skal tåle mye vind, noe som er en forutsetning her vi bor. 
 Det har et skjelett av tre, med polykarbonatplater over. 
 Vi kommer til å sette det oppå en murvegg slik at det blir høyere, flottere, og mer romslig.  
-  
+
+<br>
+
 # Hvordan gi en gave 
 Dröfn, Mo sin forlover, er ansvarlig for gavene, så dere kan kontakte henne og si hva dere vil bidra med. 
 Dröfn holder oversikt over hva som allerede har blitt gitt, og hva som mangler. 
@@ -40,8 +42,10 @@ Tusen hjertelig takk for alle bidrag til å oppfylle drømmen vår!
 
 Stor klem fra Inger og Mo
 
+<br>
 
-# Ønskeliste 
+# Ønskeliste
+
 Her finner dere en liste over ønskene våre. 
 Vil dere bidra litt til selve drivhuspotten, eller syns dere f.eks. et drivhusvindu er en passende gave? 
 Eller kanskje bare deler av et drivhusvindu…? 

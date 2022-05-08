@@ -39,3 +39,9 @@
   .icon:hover { 
     fill: lighten($headlineColorCustom, 50%);
   }
+  
+h1 {
+  margin: none !important;
+  margin-top: 2 !important;
+  margin-bottom: $line-height-copy !important;
+}
