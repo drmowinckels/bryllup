@@ -11,7 +11,7 @@ links:
 title: Rød teglstein 
 ---
 
-Dette punktet er for dem som kunne tenke seg å hjelpe oss å fylle litt av den store haugen med murstein som vi trenger for å bygge støttemuren. 
+Dette punktet er for de som kunne tenke seg å hjelpe oss å fylle litt av den store haugen med murstein som vi trenger for å bygge støttemuren. 
 Kanskje noen kommer over et kupp på finn.no, f.eks.?
 Mursteinene kan gjerne være brukt, så lenge de er i størrelsen 108mm x 228mm x 62mm (standardstørrelse for norsk tegl siden 1840). 
 Alle monner drar, som man sier.  
