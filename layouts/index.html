@@ -55,7 +55,7 @@
       </p>
       {{ range sort (where .Site.RegularPages "Section" "wishes") .Params.weight "desc" }}
       {{ $page := . }}  
-      <hr width="50%">
+      <hr width="50%" >
       <div class="flex-l items-center">
          {{ range first 1 (.Resources.ByType "image") }}
         {{ $image := .Fill "200x200 Center" }}
@@ -88,7 +88,7 @@
         </div>
       {{ end }}
     </div>
-    <hr width="50%">
+    <hr width="50%" class="mt2 mb4">
     <h1>Tusen hjertelig takk for alle bidrag til å oppfylle drømmen vår!</h1>
   </section>
 </main>
