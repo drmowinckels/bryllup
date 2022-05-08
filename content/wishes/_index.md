@@ -25,10 +25,6 @@ Og i disse dager hvor selvforsyning er ett hett tema, er det ekstra aktuelt med 
 Drømmen er å dyrke i det hele året lang, dog det krever nok noen år med erfaring før vi er der. 
 Uansett vil et drivhus forlenge dyrkesesongen vår, og vi gleder oss masse til å sette i gang. 
 
-Drivhuset vi har valgt oss ut er solid og skal tåle mye vind, noe som er en forutsetning her vi bor. 
-Det har et skjelett av tre, med polykarbonatplater over. 
-Vi kommer til å sette det oppå en murvegg slik at det blir høyere, flottere, og mer romslig.  
-
 <br>
 
 # Hvordan gi en gave 
@@ -38,10 +34,6 @@ Vi bestiller selv drivhuset og alt tilbehøret enten til høsten eller til neste
 
 Dröfn kontaktes på ingerogmo.gaver@gmail.com 
 
-Tusen hjertelig takk for alle bidrag til å oppfylle drømmen vår!  
-
-Stor klem fra Inger og Mo
-
 <br>
 
 # Ønskeliste
@@ -50,4 +42,4 @@ Her finner dere en liste over ønskene våre.
 Vil dere bidra litt til selve drivhuspotten, eller syns dere f.eks. et drivhusvindu er en passende gave? 
 Eller kanskje bare deler av et drivhusvindu…? 
 Eller vil dere muligens bidra med en murstein til fundamentet på drivhuset, som et symbol på vårt vennskap? 
-Vi blir takknemlig uansett størrelse på gaven.
+Vi blir takknemlige uansett størrelse på gaven.

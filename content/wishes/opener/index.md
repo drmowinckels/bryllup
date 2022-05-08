@@ -5,7 +5,7 @@ draft: false
 excerpt: To stk til 470,- pr stk 
 layout: single
 location: Online
-subtitle: VENTOMAX 
+subtitle: Fra Ventomax 
 title: Automatisk Vindusåpner 
 links:
 - icon: bunny_4

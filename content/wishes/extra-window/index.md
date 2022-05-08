@@ -2,7 +2,7 @@
 author: Inger & Mo
 weight: 2
 draft: false
-excerpt: for ekstra ventilasjon. To stk til 1598,- pr stk 
+excerpt: To stk til 1598,- pr stk 
 layout: single
 location: Online
 subtitle: for ekstra ventilasjon  
