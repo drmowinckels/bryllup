@@ -23,29 +23,26 @@
   }
   
   .btn-links{
-    margin: 2px;
+    margin: 0;
     text-decoration: none;
-    
-    a {
-      text-align: bottom ;
+      svg {
+        position: none;
+        transform: translate(5%, 10%);
+        -webkit-transform: translate(-5%, 10%);
     }
-    
-    svg {
-      margin: 0 !important;
-      padding: 0 !important;
-    }
-    
-    .icon { 
-      fill: white;
-      stroke: $headlineColorCustom;
-      width: 50px !important; 
-      height: 50px !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      
-      :hover { 
-        fill: lighten($headlineColorCustom, 50%);
-      }
+  }
+
+  .icon { 
+    fill: white;
+    stroke: $headlineColorCustom;
+    stroke-width: 2px;
+    width: 50px !important; 
+    height: 50px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    :hover { 
+      fill: $headlineColorCustom;
     }
   }
   
