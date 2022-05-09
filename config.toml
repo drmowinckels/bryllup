@@ -31,8 +31,8 @@ enableEmoji = true
   orgName = ""
   orgLocal = "Inger & Mo"
   description = "Inger & Mo Getting Married!"
-  favicon = "/img/favicon.ico"
-  logo = "/img/blogophonic-mark-dark.png"
+  favicon = "/img/ring.png"
+  logo = "/img/ring.png"
   # mainSections = ["blog", "project", "talk"]
   navallcaps = true
   # show/hide social icons in site header & footer
