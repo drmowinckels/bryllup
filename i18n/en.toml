@@ -10,5 +10,6 @@
   other = "hours"
 [minutes]
   other = "minutes"
-[seconds]
-  other = "seconds"
+  
+[code]
+  other = "en"

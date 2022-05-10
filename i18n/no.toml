@@ -7,5 +7,7 @@
   other = "timer"
 [minutes]
   other = "minutter"
-[seconds]
-  other = "sekunder"
+  
+  
+[code]
+  other = "no"

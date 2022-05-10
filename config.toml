@@ -1,9 +1,9 @@
 baseURL = "https://ingerogmo.netlify.app"
 theme = "hugo-apero"
-languageCode = "en"
 author = "Inger & Mo"
 copyright = "" # set to override the auto generated copyright using org info and now year
 metaDataFormat = "yaml"
+defaultContentLanguage = "no"
 footnoteReturnLinkContents = "&#8617;" # ↩
 # set deliberately low for testing choose your preffered number based on the blog layout you've chosen
 paginate = 5
@@ -94,7 +94,6 @@ enableEmoji = true
     privacyEnhanced = true
 
 # Language  
-defaultContentLanguage = 'no'
 [languages]
   [languages.no]
     title = "Vi gifter oss!"
@@ -107,8 +106,8 @@ defaultContentLanguage = 'no'
     weight = 2
     languageName = "English"
 
+
 [menu]
-  # Configure header 
   [[menu.header]]
     name = "English"
     title = "English"
@@ -118,4 +117,16 @@ defaultContentLanguage = 'no'
     name = "Norwegian"
     title = "Norwegian"
     url = "/no/"
+    weight = 2
+    
+  # Configure footer  
+  [[menu.footer]]
+    name = "License"
+    title = "License"
+    url = "/license/"
+    weight = 1
+  [[menu.footer]]
+    name = "Contact"
+    title = "Contact"
+    url = "mailto:inger.og.mo@gmail.com"
     weight = 2
