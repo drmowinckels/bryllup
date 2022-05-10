@@ -116,7 +116,7 @@ enableEmoji = true
   [[menu.header]]
     name = "Norwegian"
     title = "Norwegian"
-    url = "/no/"
+    url = "/"
     weight = 2
     
   # Configure footer  
