@@ -3,7 +3,7 @@ action_label: Read More &rarr;
 action_link: /about
 action_type: text
 description: |
-  Etter tre års utsettelse er tiden endelig inne. Lørdag 13. august skjer det, i hagen vår her i Hærland. Selskapet blir lite og intimt, og forhåpentligvis akkurat overkommerlig for en med ME. Denne siden er ment for de som vil gi oss en oppmerksomhet i anledning dagen.  
+  After three years of postponing, the time is finally here. On Saturday August 13th it is happening, in our garden in Hærland. The celebration will be small and intimate, and hopefully just about manageable for someone with ME. This page is meant for those who would like to give us some attention on our special day.
 image_left: true
 images:
 - img/ingerogmo_ed.png
@@ -12,7 +12,7 @@ show_action_link: false
 show_social_links: false
 subtitle: Inger & Mo
 text_align_left: false
-title: Vi gifter oss!
+title: We are getting married!
 type: home
 ---
 

@@ -9,25 +9,24 @@
       <div class="mh4 w-50-l {{ if not .Params.text_align_left }}tr{{ end }}">
         {{ with .Params.title }}<h1 class="f2 f1-m f-subheadline-l fw5-ns mv4 lh-solid">{{ . }}</h1>{{ end }}
         {{ with .Params.subtitle }}<h2 class="f5 fw7 mt0 mb4 ttu tracked">{{ . }}</h2>{{ end }}
-        {{ if .Params.show_social_links }}{{ partial "shared/social-links.html" . }}{{ end }}
         {{ with .Params.description }}<p class="f4 mt4 lh-copy">{{ . | markdownify }}</p>{{ end }}
         {{ if .Params.show_action_link }}<a class="mt4 action {{ .Params.action_type }}" href="{{ .Params.action_link | relURL }}">{{ .Params.action_label | safeHTML }}</a>{{ end }}
         <div id="clockdiv" class = "flex items-center flex-wrap pa2 tc w-100 {{ if not .Params.text_align_left }}justify-end{{ end }}">
-      <div class="b--solid bw1 pa3 ma2 br3" style="width: 100px">
+      <div class="timer b--solid bw1 pa3 ma2 br3">
         <h2 class="days"></h2>
-        <p class="f4 mt4 lh-copy">Days</p>
+        <p class="f4 mt4 lh-copy">{{ i18n "days" }}</p>
       </div>
-      <div class="b--solid bw1 pa3 ma2 br3" style="width: 100px">
+      <div class="timer b--solid bw1 pa3 ma2 br3">
         <h2 class="hours"></h2>
-        <p class="f4 mt4 lh-copy">Hours</p>
+        <p class="f4 mt4 lh-copy">{{ i18n "hours" }}</p>
       </div>
-      <div class="b--solid bw1 pa3 ma2 br3" style="width: 100px">
+      <div class="timer b--solid bw1 pa3 ma2 br3">
         <h2 class="minutes"></h2>
-        <p class="f4 mt4 lh-copy">Minutes</p>
+        <p class="f4 mt4 lh-copy">{{ i18n "minutes" }}</p>
       </div>
-      <div class="b--solid bw1 pa3 ma2 br3" style="width: 100px">
-        <h2 class="seconds center"></h2>
-        <p class="f4 mt4 lh-copy center">Seconds</p>
+      <div class="timer b--solid bw1 pa3 ma2 br3">
+        <h2 class="seconds"></h2>
+        <p class="f4 mt4 lh-copy center">{{ i18n "seconds" }}</p>
       </div>
     </div>
       </div>
@@ -55,7 +54,7 @@
       </p>
       {{ range sort (where .Site.RegularPages "Section" "wishes") .Params.weight "desc" }}
       {{ $page := . }}  
-      <hr width="50%" >
+      <hr width="50%" class="mt4 mb4">
       <div class="flex-l items-center">
          {{ range first 1 (.Resources.ByType "image") }}
         {{ $image := .Fill "200x200 Center" }}
@@ -85,8 +84,8 @@
        
         </div>
       {{ end }}
-      <hr width="50%" class="mt2 mb4">
-      <h1>Tusen hjertelig takk for alle bidrag til å oppfylle drømmen vår!</h1>
+      <hr width="50%" class="mt4 mb4">
+      <h1>{{ i18n "thanks" }}</h1> 
     </div>
   </section>
 </main>
