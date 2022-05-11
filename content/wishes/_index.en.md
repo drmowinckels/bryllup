@@ -28,11 +28,12 @@ In any way, a greenhouse would extend the growing season here in the North, and 
 <br>
 
 # How to give a gift
-Dröfn, Mo's maid of honor, is responsible for the gifts, so you can contact her and let her know wat you want to contribute.
+Dröfn, Mo's maid of honour, is responsible for the gifts, so you can contact her and let her know what you want to contribute.
 She will keep track over what has already been given, and what is missing.
-We will order the greenhouse and any accessories in the fall or before next spring, depending on time and opportuity to get it constructed.
+We will order the greenhouse and any accessories in the fall or before next spring, depending on time and opportunity to get it constructed.
 
-Dröfn can be reached at ingerogmo.gaver@gmail.com 
+Dröfn can be reached at <a href="mailto:ingerogmo.gaver@gmail.com?subject=Wedding gift for Inger and Mo">ingerogmo.gaver@gmail.com</a>
+
 
 <br>
 
