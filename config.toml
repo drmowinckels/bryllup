@@ -118,7 +118,7 @@ enableEmoji = true
     title = "Norwegian"
     url = "/"
     weight = 2
-    
+
   # Configure footer  
   [[menu.footer]]
     name = "License"

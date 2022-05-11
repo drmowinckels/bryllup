@@ -60,28 +60,32 @@
             </center>
           </div>
         {{ end }}
-        <div class="w-50-l">
-          <h1 class="f3 fw7 mt4 mb2 ttu custom-body-link-color">{{ .Title | markdownify }}</h1> 
-        {{ with .Params.subtitle }}
-          <h2 class="f4 mt2 gray">{{ . | markdownify }}</h2>
-        {{ end }}
-          {{ with .Params.excerpt }}
+          <div class="w-50-l">
+            <h1 class="f3 fw7 mt4 mb2 ttu custom-body-link-color">{{ .Title | markdownify }}</h1> 
+          {{ with .Params.subtitle }}
+            <h2 class="f4 mt2 gray">{{ . | markdownify }}</h2>
+          {{ end }}
+            {{ with .Params.excerpt }}
+              <p class="mb2">
+                {{ . | markdownify }}
+              </p>
+            {{ end }}
             <p class="mb2">
-              {{ . | markdownify }}
+              {{ .Content | markdownify }}
             </p>
-          {{ end }}
-          <p class="mb2">
-            {{ .Content | markdownify }}
-          </p>
-          {{ if .Params.links }}
-            {{ partial "shared/btn-links.html" . }}
-          {{ end }}
-        </div>
+            {{ if .Params.links }}
+              {{ partial "shared/btn-links.html" . }}
+            {{ end }}
+          </div>
        
         </div>
       {{ end }}
       <hr width="50%" class="mt4 mb4">
+    </div>
+    <div class="flex items-center">
+      <img src="/img/aiw/madhatter.png" width="15%">
       <h1>{{ i18n "thanks" }}</h1> 
+      <img src="/img/aiw/alice.png" width="13%">
     </div>
   </section>
 </main>
