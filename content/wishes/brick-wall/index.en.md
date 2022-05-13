@@ -12,7 +12,7 @@ title: Red brick
 ---
 
 This one is for those who could consider helping us acquire the rather large pile of bricks we need to create the foundation.
-Maybe you see a bargain on finn.no, or know of someone tearing down a red brick something?
+Maybe you see a bargain on finn.no, or know of someone tearing down a red brick _something_?
 The bricks can gladly be re-purposed, as long as they follow the standard measurements of 108mm x 228mm x 62mm (Norwegian standard since 1840).
 
 Every little piece helps.

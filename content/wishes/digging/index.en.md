@@ -8,4 +8,4 @@ location: Online
 title: Digging and foundation
 ---
 
-With all the wind here where we live, we need to get a solid foundation in place.
+With all the wind here where we live, we need to get a solid foundation in place. 

@@ -3,7 +3,7 @@ action_label: Read More &rarr;
 action_link: /about
 action_type: text
 description: |
-  After three years of postponing, the time is finally here. On Saturday August 13th it is happening, in our garden in Hærland. The celebration will be small and intimate, and hopefully just about manageable for someone with ME. This page is meant for those who would like to give us some attention on our special day.
+  After three years of postponing, the time is finally here. On Saturday August 13th it is happening, in our garden in Hærland. The celebration will be small and intimate, and hopefully just about manageable for someone with ME. This page is meant for those who would like to give us something to mark the occasion.
 image_left: true
 images:
 - img/ingerogmo_ed.png

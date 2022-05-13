@@ -32,7 +32,7 @@ Dröfn, Mo sin forlover, er ansvarlig for gavene, så dere kan kontakte henne og
 Dröfn holder oversikt over hva som allerede har blitt gitt, og hva som mangler. 
 Vi bestiller selv drivhuset og alt tilbehøret enten til høsten eller til neste vår, avhengig av når vi får tid og mulighet til å sette det opp. 
 
-Dröfn kontaktes på ingerogmo.gaver@gmail.com 
+Dröfn kan kontaktes på <a href="mailto:ingerogmo.gaver@gmail.com?subject=Bryllupsgave til Inger og Mo">ingerogmo.gaver@gmail.com</a> eller på +47 481 90 798 
 
 <br>
 
