@@ -1,4 +1,4 @@
-baseURL = "https://ingerogmo.netlify.app"
+baseURL = "https://drmowinckels.io/bryllup"
 theme = "hugo-apero"
 author = "Inger & Mo"
 copyright = "" # set to override the auto generated copyright using org info and now year

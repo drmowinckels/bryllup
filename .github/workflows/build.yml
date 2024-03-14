@@ -1,0 +1,55 @@
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+name: Build site
+
+jobs:
+  render:
+    name: Build site
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install cURL Headers
+        run: |
+          sudo apt-get update
+          sudo apt-get install libcurl4-openssl-dev
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.hugo_v }}
+          extended: true
+
+      - name: Install npm dependencies
+        run: npm install
+
+
+      - name: Build
+        run: |
+          if [[ '${{github.ref}}' == 'refs/heads/main' ]]; then
+            hugo -e production
+          else
+            hugo -b https://${{ github.head_ref }}--drmowinckels.netlify.app/
+          fi
+
+      - name: Deploy production 🚀
+        if: github.ref == 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
+
+
+
