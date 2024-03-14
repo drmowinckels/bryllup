@@ -33,12 +33,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: |
-          if [[ '${{github.ref}}' == 'refs/heads/main' ]]; then
-            hugo -e production
-          else
-            hugo -b https://${{ github.head_ref }}--drmowinckels.netlify.app/
-          fi
+        run: hugo
 
       - name: Deploy production 🚀
         if: github.ref == 'refs/heads/main'
