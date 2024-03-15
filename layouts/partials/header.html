@@ -12,7 +12,9 @@
       <a class="link f6 f5-l dib pv1 ph2 {{ if $active }}active{{ end }}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
       {{ end }}
       <div class="dib v-mid">
-        <img src="/img/aiw/image-from-rawpixel-id-6305805-original.png" height="70px">
+        {{ $img := resources.Get "img/image-from-rawpixel-id-6305805-original.png" }}
+        {{ $img = $img.Resize "70x" }}
+        <img src="{{ $img.RelPermalink }}">
       </div>
     </div>
   </nav>

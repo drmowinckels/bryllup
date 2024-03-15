@@ -83,9 +83,13 @@
       <hr width="50%" class="mt4 mb4">
     </div>
     <div class="flex items-center mr2 ml2">
-      <img src="/img/aiw/madhatter.png" width="15%">
+      {{ $hatter := resources.Get "/img/madhatter.png" }}
+      {{ $hatter := $hatter.Fill "200x200 Center" }}
+      <img src="{{ $hatter.RelPermalink }}" width="15%">
       <h1>{{ i18n "thanks" }}</h1> 
-      <img src="/img/aiw/alice.png" width="13%">
+      {{ $alice := resources.Get "/img/alice.png" }}
+      {{ $alice := $alice.Fill "200x200 Center"}}
+      <img src="{{ $alice.RelPermalink}}" width="13%">
     </div>
   </section>
 </main>
