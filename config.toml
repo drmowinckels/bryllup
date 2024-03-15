@@ -29,7 +29,7 @@ enableEmoji = true
   orgLocal = "Inger & Mo"
   description = "Inger & Mo Getting Married!"
   favicon = "/img/ring.ico"
-  logo = "/img/ring.png"
+  logo = "/img/ring_logo.png"
   # mainSections = ["blog", "project", "talk"]
   navallcaps = true
   # show/hide social icons in site header & footer
